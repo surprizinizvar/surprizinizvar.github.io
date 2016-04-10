@@ -30,6 +30,9 @@
 /************************************************************************
 // 1. General Fixing
 *************************************************************************/
+.headline-nasilcalisir {
+  color: #ffffff !important;
+}
 .page-loader {
   background-color: white;
   position: fixed;
