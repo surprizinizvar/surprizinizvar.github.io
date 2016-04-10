@@ -3389,7 +3389,7 @@ border-bottom:1px solid #d0d5d9;
 // 24. Responsive Fixing
 *************************************************************************/
 @media screen and (min-width: 0px) and (max-width: 720px) {
-  .mobile-hide{ max-width: 100px; height: auto;}
+  .mobile-hide{ display: none; }
 }
 @media all and (max-width: 900px) {
   .mfp-arrow {
