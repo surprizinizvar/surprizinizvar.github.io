@@ -24,10 +24,10 @@
 		<script src="js/html5.js"></script>
 	<![endif]-->
 
+	<script type='text/javascript' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='574553c4ac764d2faab0b3c5aeae34b8' data-cfasync='false' async='async'></script>
 
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" href="img/favicon.ico">
-	<script type='text/javascript' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='574553c4ac764d2faab0b3c5aeae34b8' data-cfasync='false' async='async'></script>
 
 </head>
 <body>
@@ -176,6 +176,8 @@
 						</form>
 					</div>
 
+					<br>
+
 					<div>
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
@@ -184,6 +186,8 @@
 						<img alt="" border="0" src="https://www.paypalobjects.com/tr_TR/i/scr/pixel.gif" width="1" height="1">
 						</form>
 					</div>
+
+					<!--<img src="img/11-12.png"/>-->
 
 					<!--<img src="img/signature.png" class="u-photo animated" data-animation="pulse" data-animation-delay="450" alt="">-->
 
@@ -243,13 +247,13 @@
 
 			<div class="col-sm-6 col-md-4 animated" data-animation="flipInY" data-animation-delay="400">
 
-				<div class="h-event">
+				<div class="h-event" style="padding-bottom:24px;">
 
 					<img src="img/begen.png" alt="">
 
 					<div class="p-name">3. Mutluluğu Paylaş</div>
 
-					<span class="dt-start">Sürprizim Var kutularıya hayatınıza renk katın.<br><div class='shareaholic-canvas' data-app='share_buttons' data-app-id=''></div></span>
+					<span class="dt-start">Sürprizim Var kutularıya hayatınıza renk katın.<br><div class='shareaholic-canvas' data-app='share_buttons' data-app-id='24301952'></div></span>
 
 				</div> <!-- end features-wrap -->
 
@@ -554,33 +558,39 @@
 	</section>-->
 	<!-- END MAP -->
 
-	<section class="section-contact" id="iletisim">
+	<!-- CONTACT -->
+	<section class="section-contact">
 
 		<div class="container">
 
+			<div class="col-sm-12 col-md-6 col-lg-offset-3">
 
-			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+				<h4 class="contact-form-title animated" data-animation="fadeIn" data-animation-delay="200">
+					Size Nasıl Yardımcı Olabiliriz?
+				</h4>
 
-				<div id="wufoo-qbxwp6h1mhgqw2">
-				Fill out my <a href="https://surprizinizvar.wufoo.com/forms/qbxwp6h1mhgqw2">online form</a>.
-				</div>
-				<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"></div>
-				<script type="text/javascript">var qbxwp6h1mhgqw2;(function(d, t) {
-				var s = d.createElement(t), options = {
-				'userName':'surprizinizvar',
-				'formHash':'qbxwp6h1mhgqw2',
-				'autoResize':true,
-				'height':'497',
-				'async':true,
-				'host':'wufoo.com',
-				'header':'show',
-				'ssl':true};
-				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-				s.onload = s.onreadystatechange = function() {
-				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-				try { qbxwp6h1mhgqw2 = new WufooForm();qbxwp6h1mhgqw2.initialize(options);qbxwp6h1mhgqw2.display(); } catch (e) {}};
-				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-				})(document, 'script');</script>
+				<form method="post" id="contact-form" class="form-inline animated" data-animation="fadeInUp" data-animation-delay="200">
+
+					<input type="text" name="first-name" class="first-name" placeholder="Adınız *" required>
+					<input type="text" name="second-name" class="second-name" placeholder="Soyadınız *" required>
+					<input type="email" name="email" class="email-address" placeholder="E-posta Adresiniz *" required>
+
+					<select name="subject" class="contact-select" required>
+
+						<option value="" selected>Konu</option>
+						<option value="Kutu Hakkında">Sürpriziniz Var Hakkında</option>
+						<option value="Sipariş Hakkında">Siparişiniz Hakkında</option>
+						<option value="İstek Öneri Şikayet">İstek / Öneri / Şikayet</option>
+
+					</select>
+
+					<textarea name="message" placeholder="Mesajınız" required></textarea>
+
+					<input type="submit" value="Mesajı Gönder">
+
+				</form>
+
+				<div class="contact-output"><p class="contact-hide">Hide Text</p></div>
 
 
 			</div> <!-- end col-sm-6 -->
@@ -588,6 +598,7 @@
 		</div> <!-- end container -->
 
 	</section>
+	<!-- END CONTACT -->
 
 
 	<!-- FOOTER -->
@@ -640,6 +651,16 @@
 	<!-- END FOOTER -->
 
 	<!-- JQUERY -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-76230341-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 	<script src="js/jquery.js"></script>
 	<script src="js/freetile.js"></script>
 	<script src="js/html5.js"></script>
