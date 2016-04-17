@@ -30,7 +30,15 @@
 /************************************************************************
 // 1. General Fixing
 *************************************************************************/
+.social-nasilcalisir{
+  font-size: 40px;
+  padding: 13px 0 0 0;
+}
+.social-nasilcalisir-fb{
+  padding-left: 10px;
+}
 .headline-nasilcalisir {
+  font-size: 40px !important;
   color: #ffffff !important;
 }
 .page-loader {
