@@ -299,7 +299,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #e7068c;
+  color: #e45f5a;
   text-decoration: none;
 }
 a:hover,
@@ -538,7 +538,7 @@ mark,
   color: #777777;
 }
 .text-primary {
-  color: #e7068c;
+  color: #e45f5a;
 }
 a.text-primary:hover {
   color: #a37b3b;
@@ -569,7 +569,7 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #e7068c;
+  background-color: #e45f5a;
 }
 a.bg-primary:hover {
   background-color: #a37b3b;
@@ -1853,7 +1853,7 @@ fieldset[disabled] .btn {
 .btn-default {
   color: #44403f;
   background-color: #ffffff;
-  border-color: #e7068c;
+  border-color: #e45f5a;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -1885,7 +1885,7 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: #ffffff;
-  border-color: #e7068c;
+  border-color: #e45f5a;
 }
 .btn-default .badge {
   color: #ffffff;
@@ -1893,7 +1893,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #e7068c;
+  background-color: #e45f5a;
   border-color: #b68942;
 }
 .btn-primary:hover,
@@ -1925,11 +1925,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #e7068c;
+  background-color: #e45f5a;
   border-color: #b68942;
 }
 .btn-primary .badge {
-  color: #e7068c;
+  color: #e45f5a;
   background-color: #ffffff;
 }
 .btn-success {
@@ -2097,7 +2097,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #e7068c;
+  color: #e45f5a;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -2191,7 +2191,7 @@ input[type="button"].btn-block {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #e7068c;
+  border-color: #e45f5a;
 }
 .nav .nav-divider {
   height: 1px;
@@ -2262,7 +2262,7 @@ input[type="button"].btn-block {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #e7068c;
+  background-color: #e45f5a;
 }
 .nav-stacked > li {
   float: none;
