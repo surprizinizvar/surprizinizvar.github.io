@@ -55,6 +55,72 @@ $('#contact-form').submit(function(e){
 
 });
 
+/* ==============================================
+Ajax Sipariş Form
+=============================================== */
+$('#siparis-form').submit(function(e){
+
+  e.preventDefault();
+
+  $(document).ajaxStart(function(){
+
+    $('.siparis-output').html('<p>Gönderiliyor</p>');
+
+  });
+
+  $.ajax({
+
+    url:'siparisform.php',
+    type:'post',
+    data:$('#siparis-form').serialize(),
+    success:function(){
+
+      $('.siparis-output').html('<h4 class="contact-form-title">2. Adım: Havale</h4><p>Sipariş kaydınız alınmıştır. Birazdan e-posta ile bilgilendirileceksiniz. Aşağıdaki hesaba 24 saat içerisinde 39.90 TL havale yaptığınızda siparişiniz kesinleşecektir. Lütfen havalenizde gönderen kişi ya da bilgilendirme kısmında kendi isminizin olmasına dikkat ediniz. Her türlü sorunuzda bize surprizinizvar@gmail.com adresinden ulaşabilirsiniz. Teşekkür ederiz!</p><br><p><strong>Banka Adı: İş Bankası</strong></p><br><p><strong>Kişi Adı: Nurgül Turan</strong></p><br><p><strong>IBAN NUMARASI: TR33 0006 4000 0014 1930 0311 60</strong></p>');
+
+    },
+    error:function(){
+
+      $('.siparis-output').html('<p class="contact-error">Siparişiniz gerçekleştirilemedi. Lütfen daha sonra tekrar deneyiniz.</p>');
+
+    }
+
+  });
+
+});
+
+/* ==============================================
+Ajax Sipariş Form
+=============================================== */
+$('#siparis-form-yillik').submit(function(e){
+
+  e.preventDefault();
+
+  $(document).ajaxStart(function(){
+
+    $('.siparis-output').html('<p>Gönderiliyor</p>');
+
+  });
+
+  $.ajax({
+
+    url:'siparisform_yillik.php',
+    type:'post',
+    data:$('#siparis-form-yillik').serialize(),
+    success:function(){
+
+      $('.siparis-output').html('<h4 class="contact-form-title">2. Adım: Havale</h4><p>Sipariş kaydınız alınmıştır. Birazdan e-posta ile bilgilendirileceksiniz. Aşağıdaki hesaba 24 saat içerisinde 439.90 TL havale yaptığınızda siparişiniz kesinleşecektir. Lütfen havalenizde gönderen kişi ya da bilgilendirme kısmında kendi isminizin olmasına dikkat ediniz. Her türlü sorunuzda bize surprizinizvar@gmail.com adresinden ulaşabilirsiniz. Teşekkür ederiz!</p><br><p><strong>Banka Adı: İş Bankası</strong></p><br><p><strong>Kişi Adı: Nurgül Turan</strong></p><br><p><strong>IBAN NUMARASI: TR33 0006 4000 0014 1930 0311 60</strong></p>');
+
+    },
+    error:function(){
+
+      $('.siparis-output').html('<p class="contact-error">Siparişiniz gerçekleştirilemedi. Lütfen daha sonra tekrar deneyiniz.</p>');
+
+    }
+
+  });
+
+});
+
 
 
 /* ==============================================

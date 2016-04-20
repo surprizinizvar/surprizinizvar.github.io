@@ -175,23 +175,10 @@
 						Sürpriziniz Var! sizin için özenle seçip hazırladığımız birbirinden güzel ürünlerin olduğu bir sürpriz kutusu. Hemen siparişinizi verin Nisan ayı özel kutunuzu sizin için ayıralım.
 					</p>
 
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="LUVW6URKUFUUG">
-						<input type="image" src="http://surprizinizvar.com/img/satinal.png" border="0" name="submit" alt="PayPal - Online ödeme yapmanın daha güvenli ve kolay yolu!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						</form>
-
+					<a href="siparis.html"><img src="img/satinal.png"></a>
 					<br>
+					<a href="siparis_yillik.html"><img src="img/satinal_yillik.png"></a>
 
-					<div>
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="XQ4HTQCGVZQXE">
-							<input type="image" src="http://surprizinizvar.com/img/satinal_yillik.png" border="0" name="submit" alt="PayPal - Online ödeme yapmanın daha güvenli ve kolay yolu!">
-							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-							</form>
-					</div>
 
 				</div> <!-- end col-sm-6 -->
 
@@ -308,7 +295,7 @@
 					<h4 class="service-title">Nasıl satın alabilirim?</h4>
 
 					<p class="service-entry">
-						"Bu ayın kutusunu al” butonuna basmanız yeterli. Otomatik olarak bütün dünyada geçerliliği olan ödeme sistemi PayPal'a yönlendirileceksiniz. Eğer varsa kişisel PayPal hesabınızdan veya kredi kartı bilgilerinizi girerek hemen siparişinizi verebilirsiniz.
+						Yukarıda "Bu ayın kutusunu al” butonuna bastığınızda karşınıza bir sipariş formu gelecek. Formu doldurup, belirtilen banka hesabına havale yapmanız yeterlidir. Malesef şimdilik kredi kartı veya kapıda ödeme gibi yöntemleri kabul edemiyoruz ama en kısa sürede devreye almak için çalışıyoruz.
 					</p>
 
 				</div> <!-- end col-sm-6 -->
@@ -361,14 +348,25 @@
 
 		<div class="container">
 
-			<div class="col-sm-12 col-md-6">
 
-				<h4 class="contact-form-title animated" data-animation="fadeIn" data-animation-delay="200">
+			<div class="col-sm-12 col-md-6 col-lg-offset-3">
+
+				<h4 class="contact-form-title">
 					Size Nasıl Yardımcı Olabiliriz?
 				</h4>
 
-				<p class="animated" data-animation="fadeIn" data-animation-delay="250">Her türlü sorunuzu bize Facebook üzerinden iletebilirsiniz. Ayrıca <img style="height:16px; width:auto;" src="img/svm.png"> adresine yazarak da bize ulaşabilirsiniz.</p>
-				<a class="animated" data-animation="fadeIn" data-animation-delay="300" href="http://m.me/surprizinizvar"><img src="img/button_iletisim.png">
+				<form method="post" id="contact-form" class="form-inline">
+
+					<input type="text" name="adsoyad" class="first-name" placeholder="Adınız Soyadınız *" required>
+					<input type="text" name="telefon" class="second-name" placeholder="Telefon Numaranız *" required>
+					<input type="email" name="eposta" class="email-address" placeholder="E-posta Adresiniz *" required>
+					<textarea name="mesaj" placeholder="Size nasıl yardımcı olabiliriz?" required></textarea>
+
+					<input type="submit" value="Mesajı Gönder">
+
+				</form>
+
+				<div class="contact-output"><p class="contact-hide">Hide Text</p></div>
 
 			</div> <!-- end col-sm-6 -->
 
