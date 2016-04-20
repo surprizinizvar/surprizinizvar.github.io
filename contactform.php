@@ -4,14 +4,13 @@
 Sürpriziniz Var İletişim Formu
 */
 
-$to='surprizinizvar@gmail.com' . ', ';
-$to .=$_POST['eposta'];
+$to='surprizinizvar@gmail.com';
 $adsoyad=$_POST['adsoyad'];
 $telefon=$_POST['telefon'];
 $eposta=$_POST['eposta'];
 $mesaj=$_POST['mesaj'];
 $header='From:'.'surprizinizvar@gmail.com';
-$subject="Surpriziniz Var! - İletisim Formu";
+$subject="Surpriziniz Var! - Iletisim Formu";
 
 // prepare email body text
 $message = "\n";
